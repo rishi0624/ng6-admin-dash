@@ -1,0 +1,125 @@
+.accountspage{
+    display: table;
+    vertical-align: top;
+    height: 100%;
+    width:100%;
+    background: #f1f1f1;
+    position: relative;
+    background: url(../../../assets/images/login-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+.slide-area{
+    display: table-cell;
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+    // background: #6adcc8;
+    padding:10px;
+    position: relative; 
+    background-color: rgba(0,0,0, 0.5);
+}
+.form-area{
+    display: table-cell;
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+    background: #243143;
+    color: #FFF;
+    padding:10px;
+    position: relative;
+}
+.action-btn-row{
+    float: right;
+}
+.action-btn-row:after{
+   content: "";
+   display: block;
+   clear: both;
+}
+.action-btn-row ul{
+    margin: 0px;
+    padding: 0px; 
+    list-style: none;
+    display: block;
+}
+.action-btn-row ul li{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    list-style: none;
+    background: #49586c; 
+}
+.action-btn-row ul li:first-child{
+    border-radius: 4px 0px 0px 4px;
+}
+.action-btn-row ul li:last-child{
+    border-radius: 0px 4px 4px 0px;
+}
+.action-btn-row ul li a{ 
+    text-decoration: none;
+    padding: 3px 10px;
+    color: #7f8b9a;
+    font-size: 12px;
+    display: block;
+    font-weight: 400;
+}
+.action-btn-row ul li.active { 
+    background: #6bdec9 !important;  
+}
+.action-btn-row ul li.active a{ 
+    color:#000; 
+}
+.formBox{ 
+    width: 100%;  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.slideBox{
+    width: 100%;  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 0 10px;
+}
+.slideBox .inner-slideBox{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.slideBox .title{
+    font-size: 21px;
+    font-weight: 400;
+    color: #FFF;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.slideBox .desc{
+    font-size: 12px;
+    color: #FFF;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media (max-width:768px)  { 
+    .slide-area{
+        display:none;
+    }
+}
+
+@media (max-width:1024px)  { 
+    .slideBox { 
+        padding: 0 40px;
+    }
+}
